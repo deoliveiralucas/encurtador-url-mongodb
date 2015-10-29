@@ -1,0 +1,49 @@
+{% extends 'layout/base.twig' %}
+
+{% block conteudo %}
+    <div class="base">
+        <hr>
+        <div class="detalhes">
+            <div class="url">
+                <h2>URL Encurtada:</h2>
+                <a target="_new" href="{{url_acesso}}">{{url_acesso}}</a> <br>
+                <small><b>Criada:</b> {{url['horario']}}</small>
+            </div>
+
+            <div class="views">
+                <p>
+                    <span>{{visualizacoes}}</span><br>
+                    Visualizações
+                </p>
+            </div>        
+
+            <div class="qrcode">
+                <img src="http://chart.googleapis.com/chart?chs=75x75&cht=qr&chl={{url_acesso}}" alt="QR Code">
+            </div>
+        </div>
+
+        <br class="clear"><hr>
+
+        <!-- Informações da URL -->
+        <div class="resumo">
+            <div class="img">
+                <div class="center">
+                    <img src="{{info_url['icone']}}">
+                </div>
+            </div> 
+
+            <div class="media-body">
+                <h4 class="media-heading"><a href="{{url['url']}}" target="_blank">{{info_url['titulo']}}</a></h4>
+                <p>{{info_url['descricao']}}</p>
+            </div>
+        </div>
+
+        <hr>
+        <div class="grafico">
+            <h2>Visualizações dos últimos dias</h2>
+            <hr>
+            {{grafico_google|raw}}
+        </div>
+
+    </div>
+{% endblock %}

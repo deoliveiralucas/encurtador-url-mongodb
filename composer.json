@@ -1,0 +1,19 @@
+{
+    "name": "library/encurtador",
+    "description": "Encurtador Unisal",
+    "authors": [
+        {
+            "name": "Lucas de Oliveira",
+            "email": "contato@deoliveiralucas.net"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Unisal\\Encurtador\\": "src/Unisal/Encurtador/"
+        }
+    },
+    "require": {
+        "zf1/zend-registry": "1.12.11",
+        "twig/twig": "1.*"
+    }
+}

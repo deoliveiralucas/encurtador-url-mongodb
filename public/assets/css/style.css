@@ -1,0 +1,105 @@
+body {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.clear {
+    clear: both;
+}
+
+input.url {
+    padding: 0.7em;
+    font-size: 160%;
+}
+
+.footer {
+    text-align: center;
+}
+
+.container-narrow {
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+.jumbotron {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.jumbotron h1 {
+    font-size: 72px;
+    line-height: 1;
+}
+
+.jumbotron .btn {
+    font-size: 190%;
+    padding: 14px 24px;
+    clear: both;
+}
+
+.url-encurtada {
+    padding: 1em;
+    background-color: #F7F7F9;
+    display: none;
+}
+
+.base {
+    min-height: 410px;
+}
+
+.detalhes .url {
+    float: left;
+    width: 400px;
+}
+
+.detalhes h2 {
+    margin: 0;
+}
+
+.detalhes small {
+    color: #c09853;
+}
+
+.detalhes .views {
+    float: right;
+    padding-top: 1em;
+    padding-left: 1em;
+    border-left: 1px solid #eee;
+}
+
+.detalhes .views span {
+    font-size: 290%;
+}
+
+div.img {
+    width: 64px;
+    height: 64px;
+    background-color: #eee;
+    text-align: center;
+    float: left;
+    margin-right: 1em;
+    display: table;
+}
+
+div.img .center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.qrcode {
+    float: right;
+}
+
+.grafico {
+    margin-bottom: 6em;
+}
+
+.span9 {
+    font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter';
+}
+

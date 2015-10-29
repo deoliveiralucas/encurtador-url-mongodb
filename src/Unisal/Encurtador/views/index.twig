@@ -1,0 +1,37 @@
+{% extends 'layout/base.twig' %}
+
+{% block conteudo %}
+    <div class="jumbotron">
+
+        <h3>Insira a URL abaixo:</h3>
+
+        <p><input type="text" class="span8 url"></p>
+
+        <a class="btn btn-large btn-primary encurtar" href="#">>> Encurtar <<</a>
+
+        <br /><br />
+
+        <!-- Url encurtada -->
+        <div class="url-encurtada">
+            <h3>Url encurtada:</h3>
+            <p></p>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="row-fluid marketing ultimas">
+        <h2>Últimas URLs encurtadas</h2>
+        <div class="span9">
+            <ul>
+                {% for url in urls %}
+                    {% set detalhes = '/?c=detalhes&url='~url['url_encurtada'] %}
+                    <li><a href="{{detalhes}}">{{host}}{{detalhes}}</a> - <small>({{url['horario']}})</small></li>
+                    {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <hr>
+{% endblock %}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}Encurtador de URL {% endblock %}</title>
+
+        <!-- CSS -->
+        <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="/assets/css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+
+        <div class="container-narrow">
+
+            <div class="masthead">
+                <ul class="nav nav-pills pull-right">            
+                    <li><a href="/">Home</a></li>            
+                    <li><a href="/?c=sobre">Sobre</a></li>            
+                </ul>
+                <h3><a href="/" class="muted">Encurtador de URL</a></h3>
+            </div>
+
+            {% block conteudo %}
+
+            {% endblock %}
+
+            <div class="footer">
+                <p>&copy; Unisal Minicurso PHP com MongoDB {{"now"|date('Y')}} - <a href="http://deoliveiralucas.net" target="_new">http://deoliveiralucas.net</a></p>
+            </div>
+
+        </div> <!-- /container -->
+
+        <!-- JavaScript -->
+        <script src="/assets/js/jquery.min.js"></script>
+        <script src="/assets/js/script.js"></script>
+    </body>
+</html>
