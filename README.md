@@ -3,8 +3,8 @@
 ## Requisitos ##
 
 - [Git](https://git-scm.com/downloads)
-- Arquivos para coonfiguração no Windows: [Download](https://drive.google.com/file/d/0B3MjZIyeZF9jeWxDTmV4UElxSjA/view?usp=sharing)
-- PHP 5.4 >=
+- Arquivos para configuração no Windows: [Download](https://drive.google.com/file/d/0B3MjZIyeZF9jeWxDTmV4UElxSjA/view?usp=sharing)
+- PHP >= 5.4
 - [Composer](https://getcomposer.org/)
 - [MongoDB](https://www.mongodb.org/downloads)
 
