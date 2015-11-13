@@ -1,4 +1,5 @@
 # Encurtador de URL com MongoDB #
+Minicurso de PHP com MongoDB - XI Semana da Computação UNISAL 2015
 
 ## Requisitos ##
 
